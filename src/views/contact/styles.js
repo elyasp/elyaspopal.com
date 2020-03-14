@@ -38,12 +38,7 @@ export const Contacts = styled.div`
   a {
     padding: 1em;
     img {
-      max-width: 150px;
-    }
-    &:nth-child(2) {
-      img {
-        max-width: 120px;
-      }
-    }
+      min-width: 100px;
+      max-width: 101px;
   }
 `;

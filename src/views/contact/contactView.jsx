@@ -18,6 +18,13 @@ export const ContactView = props => {
                 <img src={require("./linkedin.svg")} alt="linkedin-logo" />
               </a>
               <a
+                href="mailto:elyasp@outlook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={require("./plane.svg")} alt="paperplane-logo" />
+              </a>
+              <a
                 href="https://github.com/elyasp"
                 target="_blank"
                 rel="noopener noreferrer"
