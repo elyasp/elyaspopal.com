@@ -30,7 +30,7 @@ export const WorkItemLong = props => (
             <button>Node</button>
             <button>Express</button>
             <button>axios</button>
-            <button>noSQL</button>
+            <button>MongoDB</button>
             <button>SPA</button>
             <button>styled-components</button>
             <button>Responsive design</button>
