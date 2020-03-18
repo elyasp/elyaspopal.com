@@ -25,3 +25,7 @@ export const ListItem = styled.li`
     color: black;
   }
 `;
+
+export const Logo = styled.div`
+  cursor: pointer;
+`;

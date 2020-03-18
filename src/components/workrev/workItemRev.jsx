@@ -18,7 +18,13 @@ export const RevWorkItem = props => (
       <Work>
         <Zoom>
           <Icon>
-            <img src={props.logo} alt="kok" />
+            <a
+              href="http://omnilect.herokuapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={props.logo} alt="kok" />
+            </a>
           </Icon>
         </Zoom>
         <Description>

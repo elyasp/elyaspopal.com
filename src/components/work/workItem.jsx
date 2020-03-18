@@ -37,7 +37,13 @@ export const WorkItem = props => (
 
         <Zoom>
           <Icon>
-            <img src={props.logo} alt="kok" />
+            <a
+              href="https://quasarc.netlify.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={props.logo} alt="kok" />
+            </a>
           </Icon>
         </Zoom>
       </Work>

@@ -21,11 +21,10 @@ export const Navbar = () => {
   return (
     <Nav isScrolled={isScrolled}>
       <Hole>
-        <img src={require("./logo.png")} width="70" alt="hole" />
+        <NavLink section="home"></NavLink>
       </Hole>
       <Links>
         <List>
-          <NavLink section="home">Home</NavLink>
           <NavLink section="portfolio">Portfolio</NavLink>
           <NavLink section="about">About me</NavLink>
           <NavLink section="contact">Contact</NavLink>

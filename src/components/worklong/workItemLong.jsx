@@ -39,7 +39,13 @@ export const WorkItemLong = props => (
 
         <Zoom>
           <IconLong>
-            <img src={props.logo} alt="kok" />
+            <a
+              href="http://karmafy.life/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={props.logo} alt="kok" />
+            </a>
           </IconLong>
         </Zoom>
       </Work>

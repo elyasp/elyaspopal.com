@@ -39,7 +39,7 @@ export const Nav = styled.nav`
 export const List = styled.ul`
   display: flex;
   flex-direction: row;
-  width: 40vw;
+  width: 30vw;
   justify-content: space-evenly;
   list-style-type: none;
   font-weight: bold;
