@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Page = styled.div`
   display: flex;
   flex-direction: column;
-  overflow: hidden;
 `;
 
 export const ContactWrap = styled.p`
@@ -17,21 +16,28 @@ export const ContactWrap = styled.p`
 `;
 
 export const Title = styled.div`
-  font-size: 7em;
-  font-family: "Poppins";
-  color: #3c53c7;
-  font-weight: 200;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
-    0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
-    0 16px 16px rgba(0, 0, 0, 0.12), 0 32px 32px rgba(0, 0, 0, 0.12),
-    0 64px 64px rgba(0, 0, 0, 0.12), 0 128px 128px rgba(0, 0, 0, 0.12);
+  * {
+    font-family: "Poppins";
+    color: #3c53c7;
+    font-weight: 200;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
+      0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
+      0 16px 16px rgba(0, 0, 0, 0.12), 0 32px 32px rgba(0, 0, 0, 0.12),
+      0 64px 64px rgba(0, 0, 0, 0.12), 0 128px 128px rgba(0, 0, 0, 0.12);
+  }
+
+  h2 {
+    font-size: 3em;
+  }
+  h5 {
+    font-size: 1.7em;
+  }
 `;
 
 export const Contacts = styled.div`
-  width: 70%;
-  height: 20vh;
+  max-width: 60%;
+  height: 10vh;
   display: flex;
-
   align-items: center;
   justify-content: space-around;
 

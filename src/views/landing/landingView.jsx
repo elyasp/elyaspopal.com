@@ -5,7 +5,7 @@ import * as Scroll from "react-scroll";
 import Zoom from "react-reveal/Zoom";
 import Roll from "react-reveal/Roll";
 
-export const LandingView = props => (
+export const LandingView = (props) => (
   <Scroll.Element>
     <div name="home">
       <Main>
@@ -23,6 +23,10 @@ export const LandingView = props => (
           </Role>
         </Intro>
         {/* <Star
+
+
+
+
           size={{ width: "1px", height: "1px" }}
           starFrequency={1000}
           animationSpeed={300}
