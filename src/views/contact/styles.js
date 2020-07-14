@@ -2,36 +2,30 @@ import styled from "styled-components";
 
 export const Page = styled.div`
   display: flex;
-  flex-direction: column;
+  background-color: #d6f5ff;
+  padding: 30px 50px;
+  overflow: hidden;
+  height: fit-content;
+  justify-content: space-between;
+  padding: 0;
+`;
+
+export const FormWrap = styled.div`
+  display: flex;
+  background-color: lightblue;
+  /* padding: 30px 50px; */
+  min-height: fit-content;
+  width: 55%;
+  justify-content: center;
 `;
 
 export const ContactWrap = styled.p`
   height: 100vh;
   display: flex;
   margin: 0;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: #d6f5ff;
-`;
-
-export const Title = styled.div`
-  * {
-    font-family: "Poppins";
-    color: #3c53c7;
-    font-weight: 200;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
-      0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
-      0 16px 16px rgba(0, 0, 0, 0.12), 0 32px 32px rgba(0, 0, 0, 0.12),
-      0 64px 64px rgba(0, 0, 0, 0.12), 0 128px 128px rgba(0, 0, 0, 0.12);
-  }
-
-  h2 {
-    font-size: 3em;
-  }
-  h5 {
-    font-size: 1.7em;
-  }
 `;
 
 export const Contacts = styled.div`
