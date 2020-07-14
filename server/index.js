@@ -38,11 +38,11 @@ router.post("/send", (req, res, next) => {
   transporter.sendMail(mail, (err, data) => {
     if (err) {
       res.json({
-        status: "fail",
+        status: "failed",
       });
     } else {
       res.json({
-        status: "success",
+        status: "successful",
       });
     }
   });
