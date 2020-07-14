@@ -11,24 +11,7 @@ export const ContactView = (props) => {
           <FormWrap>
             <ContactForm />
           </FormWrap>
-          <ContactWrap>
-            {/* <Contacts>
-              <a
-                href="https://www.linkedin.com/in/elyaspopal"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src={require("./linkedin.svg")} alt="linkedin-logo" />
-              </a>
-              <a
-                href="https://github.com/elyasp"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src={require("./github.svg")} alt="github-logo" />
-              </a>
-            </Contacts> */}
-          </ContactWrap>
+          <ContactWrap></ContactWrap>
         </Page>
       </div>
     </Scroll.Element>
