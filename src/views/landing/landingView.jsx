@@ -23,10 +23,6 @@ export const LandingView = (props) => (
           </Role>
         </Intro>
         {/* <Star
-
-
-
-
           size={{ width: "1px", height: "1px" }}
           starFrequency={1000}
           animationSpeed={300}
@@ -44,7 +40,9 @@ export const LandingView = (props) => (
       </Main>
       <PortfolioView />
       <AboutView />
-      <ContactView />
+      <div>
+        <ContactView />
+      </div>
     </div>
   </Scroll.Element>
 );

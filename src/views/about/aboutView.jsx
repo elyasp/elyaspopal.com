@@ -12,7 +12,8 @@ export const AboutView = () => {
           Having a multitude of professional backgrounds, from avionic
           engineering and sales, to investor, insurance advisor, emergency
           coordinator and finally, developer — I always seek to improve myself
-          omnidirectionally.
+          omnidirectionally, because I believe that real growth is realized by
+          connecting the dots and forming
           <br />
           <br />
           As a web developer, I enjoy using my obsessive attention to detail, my

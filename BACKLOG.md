@@ -23,6 +23,7 @@ x Style semantically
 
 TODO:
 
+Skewed top borderbox above contactview div
 Add bio blue diagonal box
 Add contact form, create axios request, implement backend with emailservice provider
 Add media buttons, github, linkedin, spotify, medium etc
