@@ -1,41 +1,26 @@
 import React, { useState } from "react";
-import axios from "axios";
 import { FormBox, FormGroup, Button, Title } from "./styles";
 
-export const ContactForm = (props) => {
-  const [guestData, setGuestData] = useState([{}]);
+export const ContactForm = () => {
+  const [sendStatus, setSendStatus] = useState([]);
 
-  const onNameChange = (event) => {
-    setGuestData({ ...guestData, name: event.target.value });
-  };
-
-  const onEmailChange = (event) => {
-    setGuestData({ ...guestData, email: event.target.value });
-  };
-
-  const onMessageChange = (event) => {
-    setGuestData({ ...guestData, message: event.target.value });
-  };
-
-  const handleSubmit = (event) => {
+  const submitForm = (event) => {
     event.preventDefault();
-
-    axios({
-      method: "POST",
-      url: "http://localhost:3002/send",
-      data: guestData,
-    }).then((response) => {
-      if (response.data.status === "success") {
-        window.alert("Message Sent.");
-        resetForm();
-      } else if (response.data.status === "fail") {
-        window.alert("Message failed to send.");
+    const form = event.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        form.reset();
+        setSendStatus("SUCCESS");
+      } else {
+        setSendStatus("ERROR");
       }
-    });
-  };
-
-  const resetForm = () => {
-    setGuestData({ name: "", email: "", message: "" });
+    };
+    xhr.send(data);
   };
 
   return (
@@ -45,42 +30,45 @@ export const ContactForm = (props) => {
         <h2>Let's have a chat</h2>
       </Title>
 
-      <form id="contact-form" onSubmit={handleSubmit} method="POST">
+      <form
+        id="contact-form"
+        action={process.env.REACT_APP_EMAIL_API}
+        method="POST"
+        onSubmit={submitForm}
+      >
         <FormGroup>
           <label htmlFor="name">Name*</label>
-          <input
-            id="name"
-            type="text"
-            value={guestData.name}
-            onChange={onNameChange}
-            required
-          />
+          <input id="name" name="name" type="text" required />
         </FormGroup>
         <FormGroup>
           <label htmlFor="email">Email*</label>
-          <input
-            id="email"
-            type="email"
-            value={guestData.email}
-            onChange={onEmailChange}
-            required
-          />
+          <input id="email" type="email" name="email" required />
+        </FormGroup>
+        <FormGroup>
+          <label htmlFor="phone">Phone</label>
+          <input id="phone" type="tel" name="phone" />
         </FormGroup>
         <FormGroup>
           <label htmlFor="message">Message</label>
-          <textarea
-            id="message"
-            rows="8"
-            value={guestData.message}
-            onChange={onMessageChange}
-          />
+          <textarea name="message" id="message" rows="8" />
         </FormGroup>
         <FormGroup>
           <small>* required</small>
         </FormGroup>
-        <Button>
-          <button type="submit">SEND</button>
-        </Button>
+        {sendStatus === "ERROR" && (
+          <FormGroup>
+            <p>Ooops! There was an error.</p>
+          </FormGroup>
+        )}
+        {sendStatus === "SUCCESS" ? (
+          <FormGroup>
+            <p>Thanks, I'll get back to you shortly! ✔️</p>
+          </FormGroup>
+        ) : (
+          <Button>
+            <button type="submit">SEND</button>
+          </Button>
+        )}
       </form>
     </FormBox>
   );

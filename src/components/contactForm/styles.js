@@ -16,7 +16,7 @@ export const Title = styled.div`
 
   * {
     font-family: "Poppins";
-    color: #3c53c7;
+    color: white;
     font-weight: 200;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
       0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
@@ -40,6 +40,7 @@ export const FormGroup = styled.div`
   flex-direction: column;
   align-items: space-between;
   padding: 0.5em;
+  color: white;
 
   input {
     height: 3em;
@@ -65,6 +66,11 @@ export const FormGroup = styled.div`
       0 16px 16px rgba(0, 0, 0, 0.12), 0 32px 32px rgba(0, 0, 0, 0.12),
       0 64px 64px rgba(0, 0, 0, 0.12), 0 128px 128px rgba(0, 0, 0, 0.12);
   }
+
+  p {
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 export const Button = styled.div`
@@ -72,13 +78,27 @@ export const Button = styled.div`
   justify-content: center;
 
   button {
-    margin: 0.5em;
-    padding: 1.3em;
-    width: 30%;
+    font-family: "Poppins";
+    font-size: 1em;
+    font-weight: 200;
+    color: white;
+    background-color: #3c53c7;
+    transition: 500ms;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
+      0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
+      0 16px 16px rgba(0, 0, 0, 0.12), 0 32px 32px rgba(0, 0, 0, 0.12),
+      0 64px 64px rgba(0, 0, 0, 0.12), 0 128px 128px rgba(0, 0, 0, 0.12);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: none;
     outline: none;
-    border: solid 2px white;
-    transition: all 1s ease;
-    -webkit-transition: all 0.8s ease;
-    background: none;
+    padding: 0.7em 1.2em;
+
+    &:hover {
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+    }
   }
 `;
