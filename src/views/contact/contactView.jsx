@@ -1,6 +1,6 @@
 import React from "react";
 import * as Scroll from "react-scroll";
-import { ContactWrap, Page, Contacts, FormWrap } from "./styles";
+import { Page, ContactWrap, Contacts, Contact, FormWrap } from "./styles";
 import { ContactForm } from "../../components";
 
 export const ContactView = (props) => {
@@ -11,7 +11,92 @@ export const ContactView = (props) => {
           <FormWrap>
             <ContactForm />
           </FormWrap>
-          <ContactWrap></ContactWrap>
+          <ContactWrap>
+            <Contacts>
+              <a
+                href="https://github.com/elyasp"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Contact>
+                  <img src={require("./images/github.png")} alt="github_logo" />
+                  <p>
+                    GITHUB
+                    <br />
+                    Follow for more projects like above
+                  </p>
+                </Contact>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/elyaspopal/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Contact>
+                  <img
+                    src={require("./images/linkedin.png")}
+                    alt="linkedin_logo"
+                  />
+                  <p>
+                    LINKEDIN
+                    <br />
+                    Lets connect on LinkedIn
+                  </p>
+                </Contact>
+              </a>
+              <a
+                href="http://instagram.com/elyasium"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Contact>
+                  <img
+                    src={require("./images/instagram.svg")}
+                    alt="instagram_logo"
+                  />
+                  <p>
+                    INSTAGRAM
+                    <br />
+                    Share some creative ideas, suggestions or other cool content
+                  </p>
+                </Contact>
+              </a>
+              <a
+                href="https://open.spotify.com/user/elyasmuziek"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Contact>
+                  <img
+                    src={require("./images/spotify.svg")}
+                    alt="spotify_logo"
+                  />
+                  <p>
+                    SPOTIFY
+                    <br />
+                    Lets get schwifty!
+                  </p>
+                </Contact>
+              </a>
+              <a
+                href="https://t.me/elyas_popal"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Contact>
+                  <img
+                    src={require("./images/telegram.svg")}
+                    alt="telegram_logo"
+                  />
+                  <p>
+                    TELEGRAM
+                    <br />
+                    Anything is up for discussion
+                  </p>
+                </Contact>
+              </a>
+            </Contacts>
+          </ContactWrap>
         </Page>
       </div>
     </Scroll.Element>

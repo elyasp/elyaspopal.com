@@ -57,7 +57,10 @@ export const ContactForm = () => {
         </FormGroup>
         {sendStatus === "ERROR" && (
           <FormGroup>
-            <p>Ooops! There was an error.</p>
+            <p>
+              Ooops! There was an error. Try contacting me
+              <a href="mailto:elyas@outlook.com"> here.</a>
+            </p>
           </FormGroup>
         )}
         {sendStatus === "SUCCESS" ? (

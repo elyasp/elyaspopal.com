@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Page = styled.div`
   display: flex;
-  background-color: #6ec7ff;
+  background-color: black;
   padding: 30px 50px;
   overflow: hidden;
   height: fit-content;
@@ -15,30 +15,45 @@ export const FormWrap = styled.div`
   background-color: #039dfc;
   /* padding: 30px 50px; */
   min-height: fit-content;
-  width: 55%;
+  width: 50vw;
   justify-content: center;
 `;
 
-export const ContactWrap = styled.p`
-  /* height: 100vh;
+export const ContactWrap = styled.div`
+  width: 50vw;
+  min-height: 100%;
   display: flex;
   margin: 0;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Contacts = styled.div`
-  max-width: 60%;
-  height: 10vh;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+`;
+
+export const Contact = styled.div`
+  margin: 1em 0;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
 
-  a {
-    padding: 1em;
+  &:hover {
     img {
-      min-width: 100px;
-      max-width: 101px;
+      transition: 100ms ease-in-out;
+      filter: none;
+    }
+  }
+
+  img {
+    filter: grayscale(100%);
+    margin: 0.5em;
+    min-width: 2em;
+    max-width: 2em;
+    transition: 100ms ease-in-out;
   }
 `;
