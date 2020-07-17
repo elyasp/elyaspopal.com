@@ -17,11 +17,20 @@ export const Photo = styled.img`
 `;
 
 export const Paragraph = styled.p`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 0;
   padding: 3em;
   height: inherit;
-
+  font-size: 1.4em;
+  max-height: inherit;
+  text-align: center;
   h1 {
-    font-size: 40px;
+    margin: 0.5em;
+    position: relative;
+    color: rgba(0, 38, 54, 0.5);
+    font-size: 80px;
+    font-weight: 200;
   }
 `;

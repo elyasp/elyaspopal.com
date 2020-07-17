@@ -40,7 +40,7 @@ export const ContactView = (props) => {
                   <p>
                     LINKEDIN
                     <br />
-                    Lets connect on LinkedIn
+                    Let's connect on LinkedIn
                   </p>
                 </Contact>
               </a>
@@ -74,7 +74,7 @@ export const ContactView = (props) => {
                   <p>
                     SPOTIFY
                     <br />
-                    Lets get schwifty!
+                    Let's get schwifty!
                   </p>
                 </Contact>
               </a>

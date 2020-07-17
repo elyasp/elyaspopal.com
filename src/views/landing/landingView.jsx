@@ -1,5 +1,15 @@
 import React from "react";
-import { Star, Main, Name, Intro, Title, Role, Span } from "./styles";
+import {
+  Star,
+  Main,
+  Name,
+  Intro,
+  Title,
+  Role,
+  Span,
+  Footer,
+  Uniform,
+} from "./styles";
 import { PortfolioView, AboutView, ContactView } from "../index";
 import * as Scroll from "react-scroll";
 import Zoom from "react-reveal/Zoom";
@@ -8,21 +18,22 @@ import Roll from "react-reveal/Roll";
 export const LandingView = (props) => (
   <Scroll.Element>
     <div name="home">
-      <Main>
-        <Intro>
-          <Title>
-            <Span></Span>
-            <Name>
-              Elyas Popal<span></span>
-            </Name>
-          </Title>
+      <Uniform>
+        <Main>
+          <Intro>
+            <Title>
+              <Span></Span>
+              <Name>
+                Elyas Popal<span></span>
+              </Name>
+            </Title>
 
-          <Role>
-            <div></div>
-            <p>FULLSTACK DEVELOPER</p>
-          </Role>
-        </Intro>
-        {/* <Star
+            <Role>
+              <div></div>
+              <p>FULLSTACK DEVELOPER</p>
+            </Role>
+          </Intro>
+          {/* <Star
           size={{ width: "1px", height: "1px" }}
           starFrequency={1000}
           animationSpeed={300}
@@ -37,12 +48,17 @@ export const LandingView = (props) => (
           starFrequency={150}
           animationSpeed={100}
         /> */}
-      </Main>
-      <PortfolioView />
-      <AboutView />
-      <div>
+        </Main>
+        <PortfolioView />
+        <AboutView />
         <ContactView />
-      </div>
+        <Footer>
+          <a href="https://www.elyaspopal.com/">
+            Copyright © 2020 Elyas Popal Design Ltd
+          </a>
+          . All Rights Reserved.
+        </Footer>
+      </Uniform>
     </div>
   </Scroll.Element>
 );

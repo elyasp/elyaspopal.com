@@ -50,7 +50,7 @@ export const Contact = styled.div`
   }
 
   img {
-    filter: grayscale(100%);
+    filter: grayscale(100%) brightness(60%);
     margin: 0.5em;
     min-width: 2em;
     max-width: 2em;

@@ -97,6 +97,10 @@ const secFadeIn = keyframes`
   }
 `;
 
+export const Uniform = styled.div`
+  overflow: hidden;
+`;
+
 export const Star = styled.p`
   width: ${({ size: { width } }) => width};
   height: ${({ size: { height } }) => `${height}`};
@@ -245,4 +249,21 @@ export const Span = styled.span`
   position: absolute;
   animation: ${mainBlock} 2.3s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
   display: flex;
+`;
+
+export const Footer = styled.footer`
+  width: 100vw;
+  height: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.6em;
+  text-decoration-style: none;
+  background-color: black;
+  color: grey;
+
+  a {
+    text-decoration: none;
+    color: grey;
+  }
 `;
