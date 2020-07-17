@@ -82,7 +82,7 @@ export const Button = styled.div`
     font-size: 1em;
     font-weight: 200;
     color: white;
-    background-color: 3c53c7;
+    background-color: #3c53c7;
     transition: 500ms;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
       0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),

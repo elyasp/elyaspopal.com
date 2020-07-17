@@ -26,6 +26,7 @@ export const Paragraph = styled.p`
   font-size: 1.4em;
   max-height: inherit;
   text-align: center;
+
   h1 {
     margin: 0.5em;
     position: relative;
