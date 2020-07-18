@@ -23,7 +23,7 @@ export const Paragraph = styled.p`
   margin: 0;
   padding: 3em;
   height: inherit;
-  font-size: 1.4em;
+  font-size: 1em;
   max-height: inherit;
   text-align: center;
 

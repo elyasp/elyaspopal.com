@@ -253,7 +253,7 @@ export const Span = styled.span`
 
 export const Footer = styled.footer`
   width: 100vw;
-  height: 4em;
+  height: 7em;
   display: flex;
   justify-content: center;
   align-items: center;
