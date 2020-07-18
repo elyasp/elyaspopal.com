@@ -8,11 +8,12 @@ export const Page = styled.div`
   height: fit-content;
   justify-content: space-between;
   padding: 0;
+  border-top: solid 1em #350aab;
 `;
 
 export const FormWrap = styled.div`
   display: flex;
-  background-color: #039dfc;
+  background-color: #75a9d9;
   /* padding: 30px 50px; */
   min-height: fit-content;
   width: 50vw;

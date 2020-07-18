@@ -1,10 +1,12 @@
 import styled from "styled-components";
 
 export const Outer = styled.section`
-  height: 100%;
+  height: 100vh;
+  min-width: 100vw;
   display: flex;
+
   justify-content: space-between;
-  background-color: #b8c9e5;
+  background-color: #1c0161;
   overflow: hidden;
 `;
 
@@ -17,21 +19,55 @@ export const Photo = styled.img`
 `;
 
 export const Paragraph = styled.p`
+  height: inherit;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0;
-  padding: 3em;
-  height: inherit;
-  font-size: 1em;
-  max-height: inherit;
+  font-size: 0.9em;
   text-align: center;
+  background-color: #1c0161;
+  transform: skew(9deg);
+  color: #74a9d9;
 
   h1 {
     margin: 0.5em;
     position: relative;
-    color: rgba(0, 38, 54, 0.5);
+    color: white;
     font-size: 80px;
     font-weight: 200;
   }
+
+  &:after {
+    content: "";
+    width: 7em;
+    position: relative;
+
+    &:after {
+      content: "";
+      width: 99em;
+      position: relative;
+    }
+  }
+`;
+
+export const Diagonal = styled.div`
+  display: flex;
+  align-items: center;
+  height: inherit;
+  margin-right: -9em;
+  transform: skew(-9deg);
+  background-color: #1c0161;
+  overflow: hidden;
+  padding: 0 5em;
+  border-right: solid 1em #350aab;
+
+  &:after {
+    content: "";
+    width: 7em;
+    position: relative;
+  }
+`;
+
+export const PortraitWrap = styled.div`
+  /* border: green; */
 `;
