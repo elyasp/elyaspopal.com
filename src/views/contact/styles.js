@@ -5,7 +5,7 @@ export const Page = styled.div`
   background-color: black;
   padding: 30px 50px;
   overflow: hidden;
-  height: fit-content;
+  height: inherit;
   justify-content: space-between;
   padding: 0;
   border-top: solid 1em #350aab;

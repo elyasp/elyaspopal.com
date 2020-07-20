@@ -27,6 +27,7 @@ export const Title = styled.div`
   h2 {
     font-size: 2em;
   }
+
   h5 {
     font-size: 1.1em;
     margin: 0;
