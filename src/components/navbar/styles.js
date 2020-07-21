@@ -1,5 +1,5 @@
 import styled, { keyframes, css } from "styled-components";
-import { media } from "../../styles/index";
+import { media } from "../../styles/media";
 
 const navbarAnimation = keyframes`
   0% {
@@ -20,7 +20,7 @@ export const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
   height: 10vh;
-  z-index: 99;
+  z-index: 1;
   text-decoration-style: none;
   background-color: ${({ isScrolled }) =>
     isScrolled ? "hsla(27, 100%, 1%, 0.75)" : "hsla(27, 100%, 1%, 0.45)"};
@@ -34,6 +34,10 @@ export const Nav = styled.nav`
     css`
       animation: 0.3s ${navbarAnimation} ease;
     `}
+
+  /* ${media.sm(`
+    display: none;
+  `)} */
 `;
 
 export const List = styled.ul`

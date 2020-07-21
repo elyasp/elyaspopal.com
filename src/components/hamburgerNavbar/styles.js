@@ -10,13 +10,13 @@ export const Hamburger = styled.button`
   border: none;
   margin-left: 30px;
   background-color: black;
+
   ${media.md(`
     display: none;
   `)}
 `;
 
 export const NavLink = styled(NavLinkComponent)`
-  z-index: 99;
   margin-bottom: 15px;
   &:last-child {
     margin: 0;
@@ -27,7 +27,7 @@ export const HamburgerInput = styled.input.attrs({ type: "checkbox" })`
   width: 28px;
   height: 28px;
   position: absolute;
-  z-index: 7;
+
   cursor: pointer;
   :focus {
     outline: none;
@@ -60,7 +60,6 @@ export const Bars = styled.span`
   transform-origin: 4px 0px;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.2s ease;
   position: relative;
-  z-index: 6;
 
   &:first-child {
     transform-origin: 0% 0%;
@@ -89,7 +88,6 @@ export const Navigation = styled.ul`
   opacity: ${({ isOpen }) => (isOpen ? "0.85" : "0")};
   transform-origin: 0% 0%;
   transition: all 0.3s ease;
-  z-index: 4;
   margin: 0;
   padding: 0;
 `;

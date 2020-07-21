@@ -1,7 +1,4 @@
 TODO:
-Add biography emphasizing style, change text size,
-Add HMI project, change projects layout to 2x2
-Add footer
 
 --RESPONSIVE
 

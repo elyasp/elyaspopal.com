@@ -65,7 +65,7 @@ export const ContactForm = () => {
         )}
         {sendStatus === "SUCCESS" ? (
           <FormGroup>
-            <p>Thanks, I'll get back to you shortly! ✔️</p>
+            <p>✔️ Thanks, I'll get back to you shortly!</p>
           </FormGroup>
         ) : (
           <Button>

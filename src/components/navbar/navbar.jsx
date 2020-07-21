@@ -20,9 +20,7 @@ export const Navbar = () => {
   });
   return (
     <Nav isScrolled={isScrolled}>
-      <Hole>
-        <NavLink section="home"></NavLink>
-      </Hole>
+      <Hole>{/* <NavLink section="home"></NavLink> */}</Hole>
       <Links>
         <List>
           <NavLink section="portfolio">Portfolio</NavLink>

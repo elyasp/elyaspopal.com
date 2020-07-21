@@ -1,63 +1,105 @@
 import styled from "styled-components";
 
-export const MainPortfolio = styled.div`
+export const PageWrap = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  min-height: fit-content;
+  align-items: center;
+  min-height: 100%;
   background: black;
+  padding: 4em 0;
+  padding-bottom: 5em;
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    color: #242424;
+    text-transform: uppercase;
+    width: 100%;
+    letter-spacing: 0.3em;
+    margin: 30px;
+    font-weight: 200;
+    font-size: 10em;
+
+    ::selection {
+      color: red;
+      background: purple;
+    }
+  }
+`;
+
+export const Title = styled.div`
+  color: white;
+  height: 20vh;
 `;
 
 export const Projects = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  padding: 4em;
 `;
-export const Title = styled.div`
-  color: white;
 
-  height: 20vh;
+export const Logo = styled.div`
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  background: url(${(props) => props.img});
+  background-position: center;
+  background-size: cover;
+`;
+
+export const Tech = styled.div`
+  height: 30%;
+  display: flex;
+  flex-flow: row wrap;
+  text-decoration-line: overline;
+
+  h5 {
+    margin-right: 1em;
+
+    ::selection {
+      color: red;
+      background: purple;
+    }
+  }
+`;
+
+export const Description = styled.div`
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: flex-start;
+  color: white;
+  padding: 2em;
+  height: inherit;
+  visibility: hidden;
+
+  p {
+    height: 70%;
+
+    ::selection {
+      color: red;
+      background: purple;
+    }
+  }
 `;
 
 export const Project = styled.div`
   width: 500px;
   height: 317px;
   margin: 1em;
-  border: solid 3px black;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
-    0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
-    0 16px 16px rgba(0, 0, 0, 0.12), 0 32px 32px rgba(0, 0, 0, 0.12),
-    0 64px 64px rgba(0, 0, 0, 0.12), 0 128px 128px rgba(0, 0, 0, 0.12);
   overflow: hidden;
-`;
+  position: relative;
 
-export const Logo = styled.div`
-  width: 100%;
-  height: 100%;
-  background: url(${(props) => props.img});
-  background-position: center;
-  background-size: cover;
-
-  div {
-    display: none;
-  }
-
-  &:hover,
-  &:focus {
+  &:hover ${Logo} {
     filter: blur(8px);
     transform: scale(1.1);
     transition: all 0.3s ease;
+  }
 
-    div {
-      display: flex;
-      align-items: center;
-      display: block;
-      filter: none;
-      transform: none;
-      transition: none;
-      color: white;
-      background-color: rgba(0, 0, 0, 0.5);
-      height: inherit;
-    }
+  &:hover ${Description} {
+    background-color: rgba(0, 0, 0, 0.4);
+    visibility: visible;
   }
 `;

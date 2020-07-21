@@ -4,7 +4,6 @@ export const Outer = styled.section`
   height: 100vh;
   min-width: 100vw;
   display: flex;
-
   justify-content: space-between;
   background-color: #1c0161;
   overflow: hidden;
@@ -29,12 +28,22 @@ export const Paragraph = styled.p`
   transform: skew(9deg);
   color: #74a9d9;
 
+  ::selection {
+    color: red;
+    background: purple;
+  }
+
   h1 {
     margin: 0.5em;
     position: relative;
     color: white;
     font-size: 80px;
     font-weight: 200;
+
+    ::selection {
+      color: red;
+      background: purple;
+    }
   }
 
   &:after {

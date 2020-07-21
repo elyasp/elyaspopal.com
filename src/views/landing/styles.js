@@ -99,6 +99,7 @@ const secFadeIn = keyframes`
 
 export const Uniform = styled.div`
   overflow: hidden;
+  background-color: #75a9d9;
 `;
 
 export const Star = styled.p`
@@ -171,6 +172,11 @@ export const Name = styled.p`
   position: relative;
   transition: 1s;
 
+  ::selection {
+    color: red;
+    background: purple;
+  }
+
   &:hover {
     transform: scale(1.09, 1.09);
     transition: 1s;
@@ -226,6 +232,11 @@ export const Role = styled.div`
     letter-spacing: 10px;
     width: 200%;
     text-align: center;
+
+    ::selection {
+      color: red;
+      background: purple;
+    }
   }
 `;
 
@@ -262,8 +273,18 @@ export const Footer = styled.footer`
   background-color: black;
   color: grey;
 
+  ::selection {
+    color: red;
+    background: purple;
+  }
+
   a {
     text-decoration: none;
     color: grey;
+
+    ::selection {
+      color: red;
+      background: purple;
+    }
   }
 `;

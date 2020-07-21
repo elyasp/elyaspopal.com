@@ -14,6 +14,7 @@ import { PortfolioView, AboutView, ContactView } from "../index";
 import * as Scroll from "react-scroll";
 import Zoom from "react-reveal/Zoom";
 import Roll from "react-reveal/Roll";
+import Fade from "react-reveal/Fade";
 
 export const LandingView = (props) => (
   <Scroll.Element>
@@ -50,7 +51,9 @@ export const LandingView = (props) => (
         /> */}
         </Main>
         <PortfolioView />
-        <AboutView />
+        <Fade>
+          <AboutView />
+        </Fade>
         <ContactView />
         <Footer>
           <a href="https://www.elyaspopal.com/">

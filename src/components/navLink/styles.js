@@ -7,6 +7,11 @@ export const ListItem = styled.li`
   font-weight: 500;
   font-family: "Poppins";
 
+  ::selection {
+    color: red;
+    background: purple;
+  }
+
   > a {
     text-decoration: none;
   }

@@ -22,6 +22,11 @@ export const Title = styled.div`
       0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
       0 16px 16px rgba(0, 0, 0, 0.12), 0 32px 32px rgba(0, 0, 0, 0.12),
       0 64px 64px rgba(0, 0, 0, 0.12), 0 128px 128px rgba(0, 0, 0, 0.12);
+
+    ::selection {
+      color: red;
+      background: purple;
+    }
   }
 
   h2 {
@@ -42,6 +47,13 @@ export const FormGroup = styled.div`
   align-items: space-between;
   padding: 0.5em;
   color: white;
+
+  * {
+    ::selection {
+      color: red;
+      background: purple;
+    }
+  }
 
   input {
     height: 3em;
@@ -94,6 +106,11 @@ export const Button = styled.div`
     border: none;
     outline: none;
     padding: 0.7em 1.2em;
+
+    ::selection {
+      color: red;
+      background: purple;
+    }
 
     &:hover {
       border-top-left-radius: 20px;

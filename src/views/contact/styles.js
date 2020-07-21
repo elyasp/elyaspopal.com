@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { media } from "../../styles/media";
 
 export const Page = styled.div`
   display: flex;
@@ -14,7 +15,6 @@ export const Page = styled.div`
 export const FormWrap = styled.div`
   display: flex;
   background-color: #75a9d9;
-  /* padding: 30px 50px; */
   min-height: fit-content;
   width: 50vw;
   justify-content: center;
@@ -43,6 +43,13 @@ export const Contact = styled.div`
   align-items: center;
   justify-content: flex-start;
 
+  p {
+    ::selection {
+      color: red;
+      background: purple;
+    }
+  }
+
   &:hover {
     img {
       transition: 100ms ease-in-out;
@@ -56,5 +63,9 @@ export const Contact = styled.div`
     min-width: 2em;
     max-width: 2em;
     transition: 100ms ease-in-out;
+    ::selection {
+      color: red;
+      background: purple;
+    }
   }
 `;

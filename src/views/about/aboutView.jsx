@@ -1,13 +1,7 @@
 import React from "react";
-import {
-  Outer,
-  Photo,
-  Paragraph,
-  Diagonal,
-  Diagonal2,
-  PortraitWrap,
-} from "./styles";
+import { Outer, Photo, Paragraph, Diagonal } from "./styles";
 import * as Scroll from "react-scroll";
+import Fade from "react-reveal/Fade";
 
 export const AboutView = () => {
   return (
@@ -37,9 +31,7 @@ export const AboutView = () => {
           </Paragraph>
         </Diagonal>
 
-        <PortraitWrap>
-          <Photo src="/images/coralprofile.jpg" alt="profile" />
-        </PortraitWrap>
+        <Photo src="/images/coralprofile.jpg" alt="profile" />
       </Outer>
     </Scroll.Element>
   );
