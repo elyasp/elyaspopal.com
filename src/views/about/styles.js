@@ -7,6 +7,7 @@ export const Outer = styled.section`
   justify-content: space-between;
   background-color: #1c0161;
   overflow: hidden;
+  cursor: default;
 `;
 
 export const Photo = styled.img`

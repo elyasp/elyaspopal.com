@@ -8,7 +8,7 @@ export const NavLink = ({ section, ...props }) => (
       <ListItem>{section}</ListItem>
     ) : (
       <Logo>
-        <img src={require("./logo.png")} width="70" alt="hole" />
+        {/* <img src={require("./logo.png")} width="70" alt="hole" /> */}
       </Logo>
     )}
   </Scroll.Link>

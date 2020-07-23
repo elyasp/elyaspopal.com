@@ -6,7 +6,7 @@ export const PageWrap = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 100%;
-  background: black;
+  background: white;
   padding: 4em 0;
   padding-bottom: 5em;
 

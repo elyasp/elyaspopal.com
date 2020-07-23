@@ -6,7 +6,10 @@ import Fade from "react-reveal/Fade";
 export const PortfolioView = () => (
   <Scroll.Element name="portfolio">
     <PageWrap>
-      <h1>projects</h1>
+      <Fade>
+        <h1>projects</h1>
+      </Fade>
+
       <Projects>
         <a
           href="https://quasarc.netlify.app/"

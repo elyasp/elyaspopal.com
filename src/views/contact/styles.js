@@ -3,7 +3,7 @@ import { media } from "../../styles/media";
 
 export const Page = styled.div`
   display: flex;
-  background-color: black;
+  background-color: white;
   padding: 30px 50px;
   overflow: hidden;
   height: inherit;
@@ -33,7 +33,7 @@ export const ContactWrap = styled.div`
 export const Contacts = styled.div`
   a {
     text-decoration: none;
-    color: white;
+    color: #1c0161;
   }
 `;
 

@@ -51,7 +51,7 @@ export const LandingView = (props) => (
         /> */}
         </Main>
         <PortfolioView />
-        <Fade>
+        <Fade right>
           <AboutView />
         </Fade>
         <ContactView />

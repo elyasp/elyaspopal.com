@@ -1,5 +1,5 @@
 import React from "react";
-import { Nav, List, Links, Hole } from "./styles";
+import { Nav, List, Links, Home, Logo } from "./styles";
 import { NavLink } from "../navLink";
 
 export const Navbar = () => {
@@ -20,7 +20,11 @@ export const Navbar = () => {
   });
   return (
     <Nav isScrolled={isScrolled}>
-      <Hole>{/* <NavLink section="home"></NavLink> */}</Hole>
+      <Home>
+        <Logo img={"favicon.png"}>
+          <NavLink section="home"></NavLink>
+        </Logo>
+      </Home>
       <Links>
         <List>
           <NavLink section="portfolio">Portfolio</NavLink>

@@ -23,7 +23,7 @@ export const Nav = styled.nav`
   z-index: 1;
   text-decoration-style: none;
   background-color: ${({ isScrolled }) =>
-    isScrolled ? "hsla(27, 100%, 1%, 0.75)" : "hsla(27, 100%, 1%, 0.45)"};
+    isScrolled ? "rgba(2, 0, 102, 0.7)" : "hsla(27, 100%, 1%, 0.45)"};
   position: ${({ isScrolled }) => (isScrolled ? "fixed" : "absolute")};
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
     0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
@@ -57,6 +57,16 @@ export const Links = styled.div`
   width: 50vw;
 `;
 
-export const Hole = styled.div`
-  margin: 1em;
+export const Home = styled.div`
+  min-height: fit-content;
+`;
+
+export const Logo = styled.div`
+  margin: 0 2em;
+  width: 43px;
+  height: 43px;
+  background: url(${(props) => props.img});
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
 `;
