@@ -21,7 +21,7 @@ export const Navbar = () => {
   return (
     <Nav isScrolled={isScrolled}>
       <Home>
-        <Logo img={"favicon.png"}>
+        <Logo img={"favicon.ico"}>
           <NavLink section="home"></NavLink>
         </Logo>
       </Home>
