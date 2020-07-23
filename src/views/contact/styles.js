@@ -9,7 +9,6 @@ export const Page = styled.div`
   height: inherit;
   justify-content: space-between;
   padding: 0;
-  border-top: solid 1em #350aab;
 `;
 
 export const FormWrap = styled.div`
