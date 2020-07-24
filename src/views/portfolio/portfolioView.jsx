@@ -18,7 +18,7 @@ export const PortfolioView = () => (
         >
           <Fade bottom>
             <Project>
-              <Logo img={"/images/quasarc.png"} />
+              <Logo img={"/images/quasarc.jpg"} />
               <Description>
                 <p>
                   A stress challenging and soothing browser game. The quasar is
@@ -45,7 +45,7 @@ export const PortfolioView = () => (
         >
           <Fade bottom>
             <Project>
-              <Logo img={"/images/karmafy.png"} />
+              <Logo img={"/images/karmafy.jpg"} />
               <Description>
                 <p>
                   The lost and found app that is designed to make lives easier,
