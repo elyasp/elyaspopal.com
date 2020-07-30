@@ -99,7 +99,9 @@ const secFadeIn = keyframes`
 
 export const Uniform = styled.div`
   overflow: hidden;
-  background-color: #75a9d9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 export const Star = styled.p`
@@ -113,13 +115,13 @@ export const Star = styled.p`
     content: " ";
     width: ${({ size: { width } }) => `${width}`};
     height: ${({ size: { height } }) => `${height}`};
-    background: transparent;
+    background: red;
     box-shadow: ${({ starFrequency }) => repeatBoxShadows(starFrequency)};
   }
 `;
 
 export const Main = styled.div`
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -128,7 +130,7 @@ export const Main = styled.div`
   width: 100%;
   background: radial-gradient(
     circle,
-    rgba(5, 75, 140, 1) 0%,
+    rgba(16, 41, 94, 1) 0%,
     rgba(0, 0, 0, 1) 100%,
     rgba(0, 0, 0, 1) 100%
   );
@@ -146,19 +148,6 @@ export const Intro = styled.div`
   text-align: center;
 `;
 
-export const Hole = styled.div`
-  margin-top: 100px;
-  display: flex;
-  align-items: center;
-  max-height: 70vh;
-
-  transform: perspective(10px) rotate(-1deg);
-
-  img {
-    height: 25vh;
-  }
-`;
-
 export const Name = styled.p`
   font-family: "Poppins";
   color: #fff;
@@ -172,21 +161,15 @@ export const Name = styled.p`
   position: relative;
   transition: 1s;
 
-  ::selection {
-    color: red;
-    background: purple;
-  }
-
   &:hover {
     transform: scale(1.09, 1.09);
-    transition: 1s;
+    transition: 700ms;
   }
 
   span {
     width: 0px;
     height: 0px;
     border-radius: 50%;
-    background: #ffb510;
     animation: ${popIn} 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
     animation-delay: 2s;
     margin-left: 50px;
@@ -226,17 +209,11 @@ export const Role = styled.div`
     opacity: 0;
     font-weight: 100;
     font-family: "Poppins";
-    color: #ffffff;
+    color: #fff;
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 10px;
-    width: 200%;
     text-align: center;
-
-    ::selection {
-      color: red;
-      background: purple;
-    }
   }
 `;
 
@@ -263,28 +240,18 @@ export const Span = styled.span`
 `;
 
 export const Footer = styled.footer`
-  width: 100vw;
-  height: 7em;
+  height: 3em;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 0.6em;
   text-decoration-style: none;
-  background-color: black;
-  color: grey;
-
-  ::selection {
-    color: red;
-    background: purple;
-  }
+  background-color: #1b1d26;
+  border-top: solid 1px orange;
 
   a {
     text-decoration: none;
-    color: grey;
-
-    ::selection {
-      color: red;
-      background: purple;
-    }
+    color: #bababa;
+    margin: 0 0.5em;
   }
 `;

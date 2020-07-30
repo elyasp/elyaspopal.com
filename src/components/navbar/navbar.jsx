@@ -20,11 +20,8 @@ export const Navbar = () => {
   });
   return (
     <Nav isScrolled={isScrolled}>
-      <Home>
-        <Logo img={"favicon.ico"}>
-          <NavLink section="home"></NavLink>
-        </Logo>
-      </Home>
+      <NavLink section="home"></NavLink>
+
       <Links>
         <List>
           <NavLink section="portfolio">Portfolio</NavLink>

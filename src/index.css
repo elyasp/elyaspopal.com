@@ -1,3 +1,8 @@
+*::selection {
+  color: #f33;
+  background: purple;
+}
+
 body {
   margin: 0;
   font-family: "Gafata", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",

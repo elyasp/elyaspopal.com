@@ -9,6 +9,10 @@ export const Page = styled.div`
   height: inherit;
   justify-content: space-between;
   padding: 0;
+
+  /* ${media.md(`
+  flex-direction: column;
+  `)} */
 `;
 
 export const FormWrap = styled.div`
@@ -42,13 +46,6 @@ export const Contact = styled.div`
   align-items: center;
   justify-content: flex-start;
 
-  p {
-    ::selection {
-      color: red;
-      background: purple;
-    }
-  }
-
   &:hover {
     img {
       transition: 100ms ease-in-out;
@@ -62,9 +59,5 @@ export const Contact = styled.div`
     min-width: 2em;
     max-width: 2em;
     transition: 100ms ease-in-out;
-    ::selection {
-      color: red;
-      background: purple;
-    }
   }
 `;

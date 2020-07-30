@@ -13,18 +13,13 @@ export const PageWrap = styled.div`
   h1 {
     display: flex;
     justify-content: center;
-    color: #242424;
+    color: #898da3;
     text-transform: uppercase;
     width: 100%;
     letter-spacing: 0.3em;
     margin: 30px;
     font-weight: 200;
     font-size: 10em;
-
-    ::selection {
-      color: red;
-      background: purple;
-    }
   }
 `;
 
@@ -56,11 +51,6 @@ export const Tech = styled.div`
 
   h5 {
     margin-right: 1em;
-
-    ::selection {
-      color: red;
-      background: purple;
-    }
   }
 `;
 
@@ -77,11 +67,6 @@ export const Description = styled.div`
 
   p {
     height: 70%;
-
-    ::selection {
-      color: red;
-      background: purple;
-    }
   }
 `;
 

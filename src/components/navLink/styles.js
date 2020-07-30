@@ -7,11 +7,6 @@ export const ListItem = styled.li`
   font-weight: 500;
   font-family: "Poppins";
 
-  ::selection {
-    color: red;
-    background: purple;
-  }
-
   > a {
     text-decoration: none;
   }
@@ -33,4 +28,11 @@ export const ListItem = styled.li`
 
 export const Logo = styled.div`
   cursor: pointer;
+  margin: 10px;
+  height: inherit;
+
+  img {
+    max-width: 45px;
+    border-radius: 2px;
+  }
 `;

@@ -12,12 +12,10 @@ import {
 } from "./styles";
 import { PortfolioView, AboutView, ContactView } from "../index";
 import * as Scroll from "react-scroll";
-import Zoom from "react-reveal/Zoom";
-import Roll from "react-reveal/Roll";
 import Fade from "react-reveal/Fade";
 
 export const LandingView = (props) => (
-  <Scroll.Element>
+  <Scroll.Element name="home">
     <div name="home">
       <Uniform>
         <Main>
@@ -34,32 +32,36 @@ export const LandingView = (props) => (
               <p>FULLSTACK DEVELOPER</p>
             </Role>
           </Intro>
-          {/* <Star
+        </Main>
+        <Star
           size={{ width: "1px", height: "1px" }}
           starFrequency={1000}
-          animationSpeed={300}
+          animationSpeed={99}
         />
         <Star
           size={{ width: "2px", height: "2px" }}
           starFrequency={500}
-          animationSpeed={200}
+          animationSpeed={66}
         />
         <Star
           size={{ width: "3px", height: "3px" }}
           starFrequency={150}
-          animationSpeed={100}
-        /> */}
-        </Main>
+          animationSpeed={33}
+        />
         <PortfolioView />
         <Fade right>
           <AboutView />
         </Fade>
         <ContactView />
         <Footer>
-          <a href="https://www.elyaspopal.com/">
-            Copyright © 2020 Elyas Popal Design Ltd
+          <a href="https://www.elyaspopal.com/">© 2020 Elyas Popal Design. </a>
+          <a
+            href="https://www.youtube.com/watch?v=q78rcGn7k3I"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            RANDOM MUSIC
           </a>
-          . All Rights Reserved.
         </Footer>
       </Uniform>
     </div>

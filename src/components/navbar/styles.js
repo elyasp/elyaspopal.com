@@ -18,8 +18,7 @@ export const Nav = styled.nav`
   display: flex;
   color: white;
   justify-content: space-between;
-  align-items: center;
-  height: 10vh;
+  height: fit-content;
   z-index: 1;
   text-decoration-style: none;
   background-color: ${({ isScrolled }) =>
@@ -42,8 +41,8 @@ export const Nav = styled.nav`
 
 export const List = styled.ul`
   display: flex;
-  flex-direction: row;
   width: 30vw;
+  align-items: center;
   justify-content: space-evenly;
   list-style-type: none;
   font-weight: bold;
@@ -62,9 +61,9 @@ export const Home = styled.div`
 `;
 
 export const Logo = styled.div`
-  margin: 0 2em;
+  margin: 2em;
   width: 43px;
-  height: 43px;
+  min-height: 43px;
   background: url(${(props) => props.img});
   cursor: pointer;
   background-position: center;

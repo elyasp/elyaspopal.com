@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { media } from "../../styles/media";
 
 export const Outer = styled.section`
   height: 100vh;
@@ -8,6 +9,12 @@ export const Outer = styled.section`
   background-color: #1c0161;
   overflow: hidden;
   cursor: default;
+
+  @media (max-width: 549px) {
+    flex-direction: column;
+    max-width: 100vw;
+    justify-content: center;
+  }
 `;
 
 export const Photo = styled.img`
@@ -16,7 +23,7 @@ export const Photo = styled.img`
   max-height: 100vh;
 
   @media (max-width: 749px) {
-    max-height: 70vh;
+    display: none;
   }
 `;
 
@@ -25,16 +32,10 @@ export const Paragraph = styled.p`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 0.9em;
   text-align: center;
   background-color: #1c0161;
   transform: skew(9deg);
   color: #74a9d9;
-
-  ::selection {
-    color: red;
-    background: purple;
-  }
 
   h1 {
     margin: 0.5em;
@@ -42,11 +43,6 @@ export const Paragraph = styled.p`
     color: white;
     font-size: 80px;
     font-weight: 200;
-
-    ::selection {
-      color: red;
-      background: purple;
-    }
   }
 
   &:after {
@@ -59,6 +55,12 @@ export const Paragraph = styled.p`
       width: 99em;
       position: relative;
     }
+  }
+
+  @media (max-width: 749px) {
+    max-width: 100vw;
+    justify-content: center;
+    transform: skew(-9deg);
   }
 `;
 
@@ -77,6 +79,12 @@ export const Diagonal = styled.div`
     content: "";
     width: 7em;
     position: relative;
+  }
+
+  @media (max-width: 749px) {
+    /* display: none; */
+    transform: skew(9deg);
+    margin-right: 0;
   }
 `;
 
