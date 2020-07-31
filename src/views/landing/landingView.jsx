@@ -56,11 +56,11 @@ export const LandingView = (props) => (
         <Footer>
           <a href="https://www.elyaspopal.com/">© 2020 Elyas Popal Design. </a>
           <a
-            href="https://www.youtube.com/watch?v=q78rcGn7k3I"
+            href="https://www.youtube.com/watch?v=q2TNr18oJGk"
             target="_blank"
             rel="noopener noreferrer"
           >
-            RANDOM MUSIC
+            A Random Music Track
           </a>
         </Footer>
       </Uniform>

@@ -18,8 +18,6 @@ export const Outer = styled.section`
 `;
 
 export const Photo = styled.img`
-  /* border-top: solid 1em #350aab;
-  border-bottom: solid 1em #350aab; */
   max-height: 100vh;
 
   @media (max-width: 749px) {
@@ -86,8 +84,4 @@ export const Diagonal = styled.div`
     transform: skew(9deg);
     margin-right: 0;
   }
-`;
-
-export const PortraitWrap = styled.div`
-  /* border: green; */
 `;

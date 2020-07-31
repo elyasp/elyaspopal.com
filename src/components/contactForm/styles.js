@@ -80,7 +80,7 @@ export const Button = styled.div`
 
   button {
     font-family: "Poppins";
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 200;
     color: white;
     background-color: #3c53c7;
