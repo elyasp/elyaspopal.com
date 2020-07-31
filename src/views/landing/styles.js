@@ -93,15 +93,12 @@ const secFadeIn = keyframes`
     opacity: 0;
   }
   100% {
-    opacity: 0.5;
+    opacity: 0.7;
   }
 `;
 
 export const Uniform = styled.div`
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 `;
 
 export const Star = styled.p`
@@ -128,12 +125,19 @@ export const Main = styled.div`
   align-items: center;
   min-height: 100vh;
   width: 100%;
-  background: radial-gradient(
+  background-color: black;
+  background: repeating-radial-gradient(
     circle,
-    rgba(16, 41, 94, 1) 0%,
-    rgba(0, 0, 0, 1) 100%,
-    rgba(0, 0, 0, 1) 100%
+    rgba(54, 66, 120, 1) 60%,
+    rgba(86, 67, 120, 1) 80%
   );
+  /* background: repeating-radial-gradient(
+    circle,
+    black,
+    black 60px,
+    red 60px,
+    red 100px
+  ); */
   color: #8dfccd;
 `;
 
@@ -177,6 +181,11 @@ export const Name = styled.p`
     position: absolute;
     bottom: 5px;
     right: -20px;
+
+    &:hover {
+      transform: scale(0.8, 0.8);
+      transition: 400ms;
+    }
   }
 `;
 
@@ -192,11 +201,7 @@ export const Role = styled.div`
   div {
     width: 0%;
     height: inherit;
-    background: -webkit-linear-gradient(
-      left,
-      rgba(158, 255, 200, 1) 0%,
-      rgba(4, 158, 201, 1) 100%
-    );
+    background: -webkit-linear-gradient(left, #85e2ff 0%, #047acf 100%);
     position: absolute;
     animation: ${secBlock} 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) backwards;
     animation-delay: 2s;
