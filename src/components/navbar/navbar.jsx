@@ -1,5 +1,5 @@
 import React from "react";
-import { Nav, List, Links, Home, Logo } from "./styles";
+import { Nav, List, Links } from "./styles";
 import { NavLink } from "../navLink";
 
 export const Navbar = () => {

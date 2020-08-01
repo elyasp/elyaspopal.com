@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { media } from "../../styles/media";
+import media from "../../styles/media.js";
 
 export const Page = styled.div`
   display: flex;
@@ -10,9 +10,9 @@ export const Page = styled.div`
   justify-content: space-between;
   padding: 0;
 
-  /* ${media.md(`
+  ${media.mobileM`
   flex-direction: column;
-  `)} */
+  `}
 `;
 
 export const FormWrap = styled.div`

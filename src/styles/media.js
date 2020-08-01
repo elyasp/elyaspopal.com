@@ -1,22 +1,20 @@
 import { css } from "styled-components";
 
-export const breakpoints = {
-  sm: 576,
-  md: 768,
-  lg: 992,
-  xl: 1400
+const sizes = {
+  mobileS: "320",
+  mobileM: "375",
+  mobileL: "425",
+  tablet: "768",
+  laptop: "1024",
+  laptopL: "1440",
+  desktop: "2560",
 };
 
-export const media = Object.entries(breakpoints).reduce(
-  (acc, [label, size]) => {
-    return {
-      ...acc,
-      [label]: breakpointCss => css`
-        @media (min-width: ${size}px) {
-          ${breakpointCss}
-        }
-      `
-    };
-  },
-  {}
-);
+export default Object.keys(sizes).reduce((acc, label) => {
+  acc[label] = (...args) => css`
+    @media (max-width: ${sizes[label]}px) {
+      ${css(...args)};
+    }
+  `;
+  return acc;
+}, {});

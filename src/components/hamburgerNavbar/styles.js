@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { media } from "../../styles/media";
+import media from "../../styles/media";
 import { NavLink as NavLinkComponent } from "../navLink";
 
 export const Hamburger = styled.button`
@@ -10,10 +10,6 @@ export const Hamburger = styled.button`
   border: none;
   margin-left: 30px;
   background-color: black;
-
-  ${media.md(`
-    display: none;
-  `)}
 `;
 
 export const NavLink = styled(NavLinkComponent)`
@@ -104,6 +100,9 @@ export const List = styled.ul`
 `;
 
 export const Nav = styled.nav`
+  display: none;
+
+  ${media.tablet`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -111,7 +110,5 @@ export const Nav = styled.nav`
   width: 100vw;
   position: fixed;
   background-color: black;
-  ${media.md(`
-        display: none;
-    `)}
+    `}
 `;

@@ -1,15 +1,17 @@
 import React, { Fragment } from "react";
 import { LandingView } from "./views";
-import { Navbar, HamburgerNavbar } from "./components";
+import { Navbar, HamburgerNavbar, Theme } from "./components";
 require("dotenv").config();
 
 const App = () => {
   return (
-    <Fragment>
-      <Navbar />
-      <HamburgerNavbar />
-      <LandingView />
-    </Fragment>
+    <Theme>
+      <Fragment>
+        <Navbar />
+        <HamburgerNavbar />
+        <LandingView />
+      </Fragment>
+    </Theme>
   );
 };
 
