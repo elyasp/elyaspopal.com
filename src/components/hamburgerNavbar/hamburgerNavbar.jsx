@@ -5,7 +5,7 @@ import {
   Bars,
   Navigation,
   NavLink,
-  Nav
+  Nav,
 } from "./styles";
 
 export const HamburgerNavbar = () => {

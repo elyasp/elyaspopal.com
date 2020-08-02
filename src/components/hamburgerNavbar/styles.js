@@ -3,13 +3,16 @@ import media from "../../styles/media";
 import { NavLink as NavLinkComponent } from "../navLink";
 
 export const Hamburger = styled.button`
+  z-index: 3;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   border: none;
   margin-left: 30px;
-  background-color: black;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
 `;
 
 export const NavLink = styled(NavLinkComponent)`
@@ -19,6 +22,7 @@ export const NavLink = styled(NavLinkComponent)`
   }
 `;
 export const HamburgerInput = styled.input.attrs({ type: "checkbox" })`
+  z-index: 4;
   appearance: none;
   width: 28px;
   height: 28px;
@@ -49,6 +53,8 @@ export const HamburgerInput = styled.input.attrs({ type: "checkbox" })`
 `;
 
 export const Bars = styled.span`
+  z-index: 2;
+  outline: none;
   width: 30px;
   height: 2px;
   border-top: 2px solid rgba(255, 255, 255, 1);
@@ -67,6 +73,7 @@ export const Bars = styled.span`
 `;
 
 export const Navigation = styled.ul`
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -103,12 +110,13 @@ export const Nav = styled.nav`
   display: none;
 
   ${media.tablet`
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 75px;
   width: 100vw;
   position: fixed;
-  background-color: black;
+  background-color: hsla(27, 100%, 1%, 0.45);
     `}
 `;

@@ -6,7 +6,7 @@ export const ListItem = styled.li`
   color: #fff;
   font-weight: 500;
   font-family: "Poppins";
-  margin-right: 4em;
+  margin: 0 3em;
 
   > a {
     text-decoration: none;

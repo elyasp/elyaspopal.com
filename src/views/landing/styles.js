@@ -118,27 +118,17 @@ export const Star = styled.p`
 `;
 
 export const Main = styled.div`
-  /* overflow: hidden; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   width: 100%;
-  background-color: black;
   background: repeating-radial-gradient(
     circle,
     rgba(54, 66, 120, 1) 60%,
     rgba(86, 67, 120, 1) 80%
   );
-  /* background: repeating-radial-gradient(
-    circle,
-    black,
-    black 60px,
-    red 60px,
-    red 100px
-  ); */
-  color: #8dfccd;
 `;
 
 export const Intro = styled.div`
@@ -164,6 +154,10 @@ export const Name = styled.p`
   align-items: flex-start;
   position: relative;
   transition: 1s;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
+    0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
+    0 16px 16px rgba(0, 0, 0, 0.12), 0 32px 32px rgba(0, 0, 0, 0.12),
+    0 64px 64px rgba(0, 0, 0, 0.12), 0 128px 128px rgba(0, 0, 0, 0.12);
 
   &:hover {
     transform: scale(1.09, 1.09);
@@ -181,6 +175,10 @@ export const Name = styled.p`
     position: absolute;
     bottom: 5px;
     right: -20px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
+      0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
+      0 16px 16px rgba(0, 0, 0, 0.12), 0 32px 32px rgba(0, 0, 0, 0.12),
+      0 64px 64px rgba(0, 0, 0, 0.12), 0 128px 128px rgba(0, 0, 0, 0.12);
 
     &:hover {
       transform: scale(0.8, 0.8);
