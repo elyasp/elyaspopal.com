@@ -11,16 +11,16 @@ export const AboutView = () => {
             <h1>Hi there!</h1>
             I'm Elyas, a software developer from the Netherlands. <br />
             Having a multitude of professional backgrounds, from avionics,
-            aerospace engineering and sales, to investor, insurance advisor,
-            emergency coordinator and finally, developer — I always seek to
-            improve myself omnidirectionally, because I believe that real growth
-            is realized by connecting the dots and expanding perceptions.
+            aerospace engineering and sales, to insurance advisor, emergency
+            coordinator and finally, developer — I always seek to improve myself
+            omnidirectionally, because I believe that real growth is realized by
+            connecting the dots and expanding perceptions.
             <br />
             <br />
             As a web developer, I enjoy using my obsessive attention to detail,
             my ever-present love for creating things, and my growth-driven work
             ethic to literally change the world. That's why I’m excited to make
-            a big impact in this field at a highly-motivated, pioneering
+            a big impact in this field in a highly-motivated, pioneering
             environment.
             <br />
             <br />
