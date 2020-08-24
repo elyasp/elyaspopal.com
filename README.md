@@ -1,1 +1,2 @@
-Created with React
+
+TODO: Remake with Gatsby, improve lighthouse test, add projects
