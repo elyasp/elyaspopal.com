@@ -30,7 +30,7 @@ export const AboutView = () => {
           </Paragraph>
         </Diagonal>
 
-        <Photo src="/images/portrait.jpg" alt="profile" />
+        <Photo src="/images/portrait.webp" alt="profile" />
       </Outer>
     </Scroll.Element>
   );

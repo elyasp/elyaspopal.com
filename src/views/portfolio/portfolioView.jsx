@@ -18,7 +18,7 @@ export const PortfolioView = () => (
         >
           <Fade bottom>
             <Project>
-              <Logo img={"/images/quasarc.jpg"} />
+              <Logo img={"/images/quasarc.webp"} />
               <Description>
                 <p>
                   A stress challenging and soothing browser game. The quasar is
@@ -45,7 +45,7 @@ export const PortfolioView = () => (
         >
           <Fade bottom>
             <Project>
-              <Logo img={"/images/karmafy.jpg"} />
+              <Logo img={"/images/karmafy.webp"} />
               <Description>
                 <p>
                   The lost and found app that is designed to make lives easier,
@@ -75,7 +75,7 @@ export const PortfolioView = () => (
         >
           <Fade bottom>
             <Project>
-              <Logo img={"/images/omnilect.png"} />
+              <Logo img={"/images/omnilect.webp"} />
               <Description>
                 <p>
                   Dinner or supper? Soda or coke? Hand or parking brake...? Find
@@ -102,7 +102,7 @@ export const PortfolioView = () => (
         >
           <Fade bottom>
             <Project>
-              <Logo img={"/images/abb.png"} />
+              <Logo img={"/images/abb.webp"} />
               <Description>
                 <p>
                   A human-machine interface to show deviations and observations
@@ -113,11 +113,38 @@ export const PortfolioView = () => (
                 </p>
                 <Tech>
                   <h5>React</h5>
-                  <h5>React Hooks</h5>
+                  <h5>Hooks</h5>
                   <h5>Node</h5>
                   <h5>Express</h5>
                   <h5>RESTful API</h5>
                   <h5>JSON</h5>
+                </Tech>
+              </Description>
+            </Project>
+          </Fade>
+        </a>
+        <a
+          href="https://githublight.netlify.app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Fade bottom>
+            <Project>
+              <Logo img={"/images/githublight.webp"} />
+              <Description>
+                <p>
+                  Getting too lost in Github's maze of functionalities and
+                  lists? Github Light is a training project made to provide a
+                  simple repository search based on a user. Currently using
+                  Github's v3 API, which i'm upgrading to the GraphQL using v4
+                  API ... in progress
+                </p>
+                <Tech>
+                  <h5>React</h5>
+                  <h5>Hooks</h5>
+                  <h5>Jest</h5>
+                  <h5>axios</h5>
+                  <h5>styled-components</h5>
                 </Tech>
               </Description>
             </Project>

@@ -14,7 +14,7 @@ import { PortfolioView, AboutView, ContactView } from "../index";
 import * as Scroll from "react-scroll";
 import Fade from "react-reveal/Fade";
 
-export const LandingView = (props) => (
+export const LandingView = () => (
   <Scroll.Element name="home">
     <div name="home">
       <Uniform>
@@ -56,7 +56,7 @@ export const LandingView = (props) => (
         <Footer>
           <a href="https://www.elyaspopal.com/">© 2020 Elyas Popal Design. </a>
           <a
-            href="https://www.youtube.com/watch?v=q2TNr18oJGk"
+            href="https://www.youtube.com/watch?v=FQlAEiCb8m0"
             target="_blank"
             rel="noopener noreferrer"
           >
