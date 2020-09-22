@@ -60,7 +60,7 @@ export const PortfolioView = () => (
                   <h5>React</h5>
                   <h5>Node</h5>
                   <h5>Express</h5>
-                  <h5>RESTful API</h5>
+                  <h5>REST API</h5>
                   <h5>MongoDB</h5>
                   <h5>styled-components</h5>
                 </Tech>
@@ -88,7 +88,7 @@ export const PortfolioView = () => (
                   <h5>Handlebars</h5>
                   <h5>Express</h5>
                   <h5>Node</h5>
-                  <h5>RESTful API</h5>
+                  <h5>REST API</h5>
                   <h5>CSS</h5>
                 </Tech>
               </Description>
@@ -116,8 +116,38 @@ export const PortfolioView = () => (
                   <h5>Hooks</h5>
                   <h5>Node</h5>
                   <h5>Express</h5>
-                  <h5>RESTful API</h5>
+                  <h5>REST API</h5>
                   <h5>JSON</h5>
+                </Tech>
+              </Description>
+            </Project>
+          </Fade>
+        </a>
+        <a
+          href="https://flappx.herokuapp.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Fade bottom>
+            <Project>
+              <Logo img={"/images/tappx-logo.svg"} />
+              <Description>
+                <p>
+                  Tappx is an AdTech company that serves ads on multiple
+                  platforms. To keep track of their programmatic ads in mobile
+                  platforms, I developed a bundle manager that helps them
+                  registering each app where a tappx ad is placed in. Click to
+                  see UI serving from a mock SQL database.
+                </p>
+                <Tech>
+                  <h5>React</h5>
+                  <h5>Typescript</h5>
+                  <h5>Node</h5>
+                  <h5>Express</h5>
+                  <h5>REST API</h5>
+                  <h5>MySQL</h5>
+                  <h5>styled-components</h5>
+                  <h5>webpack</h5>
                 </Tech>
               </Description>
             </Project>
